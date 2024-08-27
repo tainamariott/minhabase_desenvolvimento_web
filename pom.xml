@@ -30,6 +30,11 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.33</version> <!-- Verifique a versão mais recente -->
     </dependency>
+    <dependency>
+      <groupId>com.rocketfuel.sdbc</groupId>
+      <artifactId>postgresql-jdbc_2.13</artifactId>
+      <version>4.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -76,5 +81,15 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>9</source>
+          <target>9</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
